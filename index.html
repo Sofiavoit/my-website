@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Форма користувача</title>wwww
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h2>Будь ласка, заповніть форму для участі</h2>
+  <p>Заповніть усі поля нижче. Ваші дані залишаться конфіденційними.</p>
+
+  <form action="#">
+    <label for="name">Прізвище та ім’я:</label>
+    <input type="text" id="name" name="name" placeholder="Вводити сюди" title="Введіть своє прізвище та ім’я" required>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" placeholder="Введіть пароль" title="Введіть пароль" required
+      minlength="6">
+
+    <label for="occupation">Чим Ви займаєтеся?</label>
+    <select id="occupation" name="occupation" required>
+      <option value="">-- Оберіть варіант --</option>
+      <option value="student">Навчаюся</option>
+      <option value="work">Працюю</option>
+      <option value="freelance">Фриланс</option>
+      <option value="unemployed">Тимчасово не працюю</option>
+    </select>
+
+    <label for="email">Ваш Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+    <label>
+      <input type="checkbox" name="agree" required>
+      Я погоджуюсь з умовами
+    </label>
+
+    <div class="btn-group">
+      <button type="submit">Надіслати</button>
+      <button type="reset">Очистити форму</button>
+    </div>
+  </form>
+
+</body>
+
+</html>

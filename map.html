@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Карта посилань з фігурами</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Карта посилань з геометричними фігурами</h1>
+  <p>На зображенні нижче розміщено три гарячі області — кожна веде на інший сайт:</p>
+
+  <img src="images/images.png" usemap="#figures-map" width="365" height="138" alt="Геометричні фігури">
+
+  <map name="figures-map">
+
+    <area shape="poly" coords="30,130,90,130,60,30" href="https://www.google.com" target="_blank" alt="Google" title="Перейти на Google">
+    
+    <!-- Коло (в центрі) -->
+    <area shape="circle" coords="180,80,50" href="https://www.wikipedia.org" target="_blank" alt="Wikipedia" title="Перейти на Wikipedia">
+
+    <!-- Квадрат (праворуч) -->
+    <area shape="rect" coords="250,30,340,120" href="https://www.youtube.com" target="_blank" alt="YouTube" title="Перейти на YouTube">
+  </map>
+
+  <p><strong>Пояснення:</strong></p>
+  <ul>
+    <li>🔺 Натисни на червоний трикутник — відкриється Google</li>
+    <li>🔵 Натисни на синє коло — відкриється Wikipedia</li>
+    <li>🟨 Натисни на жовтий квадрат — відкриється YouTube</li>
+  </ul>
+</body>
+</html>
